@@ -21,7 +21,7 @@ export default function Addsupplier(){
             itemcode
         }
         
-        axios.post("http://localhost:8080/supplier/addsup", newSupplier).then(()=>{
+        axios.post("http://localhost:3000/supplier/addsup", newSupplier).then(()=>{
             alert("supplier added")
         }).catch((err)=>{
             alert(err)

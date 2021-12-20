@@ -7,7 +7,7 @@ const app = express();
 require("dotenv").config();
 
 
-const PORT = process.env.PORT || 8080 ;
+const PORT = process.env.PORT || 3000 ;
 
 
 app.use(cors());
@@ -30,8 +30,10 @@ connection.once('open', () => {
 })
 
 const supplierRouter = require("./routes/supplier.js");
+const employeeRouter = require("./routes/employee.js");
 
 app.use("/supplier",supplierRouter);
+app.use("/employee",employeeRouter);
 
 app.listen(PORT, () => {
     console.log('Server is up and Running on port: ', {PORT})

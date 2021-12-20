@@ -13,7 +13,7 @@ export default function AllSupplier(){
     const [suppliers, setSuppliers] = useState([]);
 
     const deleteSupplier=(id) =>{
-        axios.delete(`http://localhost:8080/supplier/deletesup/${id}`).then(()=>{
+        axios.delete(`http://localhost:3000/supplier/deletesup/${id}`).then(()=>{
             swal({
                 title: "Are you sure?",
                 text: "The Item Will be Deleted from Supplier List",
@@ -41,7 +41,7 @@ export default function AllSupplier(){
     useEffect(() => {
         //fetching all supplier data from the database
         function getSuppliers(){
-        axios.get("http://localhost:8080/supplier/allsup").then((res) => {
+        axios.get("http://localhost:3000/supplier/allsup").then((res) => {
             setSuppliers(res.data);
             }
         ).catch((err) => {

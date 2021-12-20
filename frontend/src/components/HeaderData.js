@@ -6,7 +6,7 @@ import ShowChartIcon from '@material-ui/icons/ShowChart';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
+//import ContactMailIcon from '@material-ui/icons/Conta,mnbvxczctMail';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 
@@ -81,13 +81,13 @@ export const  HeaderData =  [
         // link represents where it should redirect to
         title: "Add Employee Details",
         icon:<AccountCircleSharpIcon/>,
-        link:"/add"
+        link:"/addemp"
 
     },
     {
         title: "Employee Management",
         icon:<AirplanemodeActiveIcon/>,
-        link:"/"
+        link:"/allemp"
 
     },
     {
@@ -98,14 +98,14 @@ export const  HeaderData =  [
 
     },
     {
-        title: "Delivery Management",
-        icon:<ContactMailIcon/>,
-        link:"/"
+        // title: "Delivery Management",
+        // icon:<ContactMailIcon/>,
+        // link:"/"
 
     },
     {
         // link represents where it should redirect to
-        title: "Add Branch Detailsr",
+        title: "Add Branch Details",
         icon:<AccountCircleSharpIcon/>,
         link:"/add"
 
